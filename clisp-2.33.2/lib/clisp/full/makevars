@@ -1,0 +1,8 @@
+CC='gcc'
+CPPFLAGS=''
+CFLAGS='-W -Wswitch -Wcomment -Wpointer-arith -Wimplicit -Wreturn-type  -Wno-sign-compare -O2 -DUNIX_BINARY_DISTRIB -DUNICODE -DNO_GETTEXT -DNO_SIGSEGV -I.'
+CLFLAGS='-x none'
+LIBS='lisp.a libcharset.a -lncurses  -liconv '
+X_LIBS=''
+RANLIB='ranlib'
+FILES='lisp.a libnoreadline.a libcharset.a '

@@ -1,0 +1,35 @@
+# Trevor Oke
+#name : insert standard haml file
+# --
+%head
+  %title= @page_title ? "#{@page_title} | #{AppConfig['app_name']}" : AppConfig['app_name']
+
+%body
+  #header
+    #logo
+      %h2= image_tag '${1:logo.gif}'
+
+
+  #metanav
+
+  #content_wrapper
+    #maincontent_wrapper
+      = flash_notices
+    #content_header
+      = yield :titlebar
+      %br{:style => 'clear:both;'}
+
+      #content_block
+        #main_content
+          = yield
+
+      #content_nav
+        = yield :sidebar
+
+  #footer
+    #footertext
+      Copyright (c) 2008, Yellow Truck Software
+      |
+      = link_to "privacy", "privacy"
+      |
+      = link_to "help", "help"

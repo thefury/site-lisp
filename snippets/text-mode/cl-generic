@@ -1,0 +1,12 @@
+#name : generic cover letter
+# --
+Dear ${1:Hiring Manager},
+
+I am interested in the ${2:position} position advertised in ${3:Monster}. With more than 9 years of experience in a variety of programming positions, I feel that I would be an excelent candidate.
+
+My resume is ${4:attached} summarizing where my skills and abilities have been developed. I would welcome the opportunity to discuss my background at your convenience.
+
+Sincerely,
+
+Trevor Oke
+$0

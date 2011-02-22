@@ -1,0 +1,5 @@
+#name : new account record
+# --
+- :subdomain: ${vondrats}
+  :email: ${trevor.oke@vondrats.com}
+  :login: ${percival}
