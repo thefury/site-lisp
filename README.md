@@ -8,3 +8,6 @@ Usage
 3. ln -s site-lisp/.emacs .emacs
 
 You should be good to go.
+
+* test1
+* test 2
