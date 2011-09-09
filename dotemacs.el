@@ -25,8 +25,12 @@
 (add-path "/nxml-mode-20041004")
 (add-path "/g-client")
 (add-path "/remember")
+(add-path "/magit-1.0.0")
 
 
+;;; ===== magit mode
+(require 'magit)
+(magit-git-executable "/usr/local/bin/git")
 
 ;;; ===== pomodomo mode
 (add-to-list 'load-path "~/tmp")

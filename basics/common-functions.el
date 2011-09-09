@@ -84,4 +84,16 @@
   (interactive)
   (insert (date-string)))
 
+; ---
+; copy line without selection
+; http://www.emacswiki.org/cgi-bin/wiki/CopyWithoutSelection
+(defun copy-line (&optional arg)
+  "Save current line into Kill-Ring without mark the line "
+  (interactive "P")
+  (let ((beg (line-beginning-position))
+        (end (line-end-position arg)))
+    (copy-region-as-kill beg end)))
+
+(global-set-key (kbd "C-c l") 'copy-line)
+
 (provide 'common-functions)
