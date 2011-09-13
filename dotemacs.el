@@ -29,8 +29,8 @@
 
 
 ;;; ===== magit mode
-(require 'magit)
-(magit-git-executable "/usr/local/bin/git")
+;(require 'magit)
+;(magit-git-executable "/usr/local/bin/git")
 
 ;;; ===== pomodomo mode
 (add-to-list 'load-path "~/tmp")
